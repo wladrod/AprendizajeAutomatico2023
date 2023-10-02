@@ -32,6 +32,6 @@ def graficar_regiones_decision(X, y, clasificador, indices_prueba=None, resoluci
     # resaltar ejemplos de prueba
     if indices_prueba is not None:
         X_test, y_test = X[indices_prueba, :], y[indices_prueba]
-        plt.scatter(X_test[:, 0], X_test[:, 1], c='', edgecolor='black',
+        plt.scatter(X_test[:, 0], X_test[:, 1], cmap='winter', edgecolor='black',
                 alpha=1.0, linewidth=1, marker='o',
                 s=55, label='conjunto prueba')
